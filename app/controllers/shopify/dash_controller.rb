@@ -2,7 +2,7 @@ class Shopify::DashController < ApplicationController
   include ShopifyApp::EmbeddedApp
   include ShopifyApp::RequireKnownShop
   include ShopifyApp::ShopAccessScopesVerification
-  layout 'shopify'
+  # layout 'shopify'
 
   def dash
     @shop_origin = current_shopify_domain
