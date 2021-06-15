@@ -2,4 +2,5 @@
 
 class AuthenticatedController < ApplicationController
   include ShopifyApp::Authenticated
+  layout 'shopify'
 end
