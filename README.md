@@ -1,24 +1,9 @@
-# README
+App Setup:
+Embedded set to false
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+App URL
+https://xxx.ngrok.io/shopify/dash
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Allowed redirection URL(s)
+https://xxx.ngrok.io/shopify/auth/shopify/callback
+https://xxx.ngrok.io/shopify/dash
