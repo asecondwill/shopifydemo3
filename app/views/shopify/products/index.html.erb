@@ -1,0 +1,8 @@
+<h1>Products</h1>
+<% @products.each do |product|  %>
+  <%= link_to product.title, shopify_products_show_path %>
+<% end %>
+
+<hr>
+
+<%= link_to "Dash", shopify_dash_path %>

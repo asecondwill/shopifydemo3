@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   namespace :shopify do
     get "dash", to: "dash#dash"
     get '/products', :to => 'products#index'
+    get '/products/show', :to => 'products#show'
   end
 
 
