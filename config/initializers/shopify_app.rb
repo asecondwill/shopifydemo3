@@ -20,7 +20,7 @@ ShopifyApp.configure do |config|
     raise('Missing SHOPIFY_API_SECRET. See https://github.com/Shopify/shopify_app#requirements') unless config.secret
   end
 
-  config.root_url = '/shopify'
+  config.root_url = '/storify'
 end
 
 # ShopifyApp::Utils.fetch_known_api_versions                        # Uncomment to fetch known api versions from shopify servers on boot

@@ -1,8 +1,8 @@
-class Shopify::SplashController < ApplicationController
+class Storify::SplashController < ApplicationController
   #include ShopifyApp::EmbeddedApp
   include ShopifyApp::RequireKnownShop
   include ShopifyApp::ShopAccessScopesVerification
-  layout 'shopify'
+  layout 'storify'
   skip_before_action :verify_authenticity_token
 
   def splash

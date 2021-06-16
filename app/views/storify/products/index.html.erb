@@ -1,11 +1,8 @@
-
-<br><br>
-
-<h1>best</h1>
+<h1>Products</h1>
 <% @products.each do |product|  %>
   <%= link_to product.title, shopify_products_show_path %>
 <% end %>
 
+<hr>
 
-    <h2>Products</h2>
-    <%= link_to "Products", shopify_products_path() %>
+<%= link_to "Dash", storify_dash_path( ) %>

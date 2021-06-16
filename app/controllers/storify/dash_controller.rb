@@ -1,4 +1,4 @@
-class Shopify::DashController < AuthenticatedController
+class Storify::DashController < AuthenticatedController
 
   def dash
     @products = ShopifyAPI::Product.find(:all, params: { limit: 10 })

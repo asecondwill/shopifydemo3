@@ -1,0 +1,11 @@
+
+<br><br>
+
+<h1>best</h1>
+<% @products.each do |product|  %>
+  <%= link_to product.title, storify_products_show_path %>
+<% end %>
+
+
+    <h2>Products</h2>
+    <%= link_to "Products", storify_products_path() %>

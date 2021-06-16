@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Shopify::ProductsController < AuthenticatedController
+class Storify::ProductsController < AuthenticatedController
   def index
     @products = ShopifyAPI::Product.find(:all, params: { limit: 10 })
 

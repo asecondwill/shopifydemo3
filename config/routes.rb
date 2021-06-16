@@ -2,8 +2,8 @@ Rails.application.routes.draw do
 
 
 
-  mount ShopifyApp::Engine, at: '/shopify'
-  namespace :shopify do
+  mount ShopifyApp::Engine, at: '/storify'
+  namespace :storify do
     root :to => 'splash#splash'
     get "splash", to: "splash#splash"
     get "dash", to: "dash#dash"
