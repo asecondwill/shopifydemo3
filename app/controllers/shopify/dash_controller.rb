@@ -1,12 +1,7 @@
-class Shopify::DashController < ApplicationController
-  include ShopifyApp::EmbeddedApp
-  include ShopifyApp::RequireKnownShop
-  include ShopifyApp::ShopAccessScopesVerification
-  layout 'shopify'
+class Shopify::DashController < AuthenticatedController
 
   def dash
-    @shop_origin = current_shopify_domain
-    @host = params[:host]
+    @products = ShopifyAPI::Product.find(:all, params: { limit: 10 })
   end
 
   private
