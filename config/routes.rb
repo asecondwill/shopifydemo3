@@ -11,6 +11,7 @@ Rails.application.routes.draw do
     get '/products/show', :to => 'products#show'
   end
 
+  root :to => 'splash#splash'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
